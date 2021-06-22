@@ -59,8 +59,8 @@ def getIP(site):
                         print RED + "[-]" + WHITE + "DOMAIN: " + RED + site
                         pass
 			
-nam=raw_input('[>]Domain List:~')
-with open(nam) as f:
+list=raw_input('[>]Domain List:~')
+with open(list) as f:
     for i in f:
         getIP(i)
 
