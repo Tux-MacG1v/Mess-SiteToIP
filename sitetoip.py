@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import sys,os,re,socket,binascii,time,json,random,threading,Queue,pprint,urlparse,smtplib,telnetlib,os.path,hashlib,string,urllib2,glob,sqlite3,urllib,argparse,marshal,base64,colorama,requests
 from colorama import *
 from random import choice
@@ -14,15 +13,17 @@ colorama.init()
 
 
 # Now regular ANSI codes should work, even in Windows
-CLEAR_SCREEN = '\033[2J'
-RED = '\033[31m'   # mode 31 = red forground
-RESET = '\033[0m'  # mode 0  = reset
+CLEAR_SCREEN = "\033[2J"
+RED = "\033[31m"   # mode 31 = red forground
+RESET = "\033[0m"  # mode 0  = reset
 BLUE  = "\033[34m"
+YELLOW = "\033[1;33m"
 CYAN  = "\033[36m"
 GREEN = "\033[32m"
 RESET = "\033[0m"
 BOLD    = "\033[m"
 REVERSE = "\033[m"
+WHITE = "\033[1;37m"
 def logo():
         clear = "\x1b[0m"
         colors = [36, 32, 34, 35, 31, 37  ]
@@ -51,13 +52,14 @@ def getIP(site):
 		try:
 			if 'http://' not in site:
 				IP1 = socket.gethostbyname(site)
-				print "IP: "+IP1
+				print GREEN + "[+]" +   WHITE + "IP: "+ GREEN + IP1
 				open('ips.txt', 'a').write(IP1+'\n')
-	
+				
 		except:
-			pass
+                        print RED + "[-]" + WHITE + "DOMAIN: " + RED + site
+                        pass
 			
-nam=raw_input('Domain List name :')
+nam=raw_input('[>]Domain List:~')
 with open(nam) as f:
     for i in f:
         getIP(i)
