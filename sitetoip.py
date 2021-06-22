@@ -36,7 +36,7 @@ def logo():
 |____/___| |_| |_____|           |_| \___/          |___|_|  
 
                                                                        
-		          MODED BY TUX-MACG1V
+		          CODED BY TUX-MACG1V
 		          <%%%%|==========>
 		 Note : Domaine List Shoud Be Without http://
 			                  """
