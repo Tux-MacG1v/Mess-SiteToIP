@@ -2,18 +2,33 @@
 MASS Grab IPS From Domains
 
 
-<a href="https://img001.prntscr.com/file/img001/mNtNM6cFTeq3c4ENOobQbA.jpg" alt="NO-SLEEP" border="0" /></a>
 
 
+<a href="https://prnt.sc/_fliuba2k9V7"><img src="https://img001.prntscr.com/file/img001/I-bco5IVTVam8wYoX_iB4Q.png" alt="site-to-ip" border="0" /></a>
+
+
+- [ ] Install PYTHON 3
 - [ ] Install PYTHON
 
-# PYTHON 3
+# PYTHON 2
 ```
 pip install -r requirement.txt
 ```
 ```
-Python3 main.py
+sitetoip.py
+```
+```
+pyhton2 sitetoip.py
+```
+# PYTHON 3
+```
+pip install requests
+```
+```
+sitetoipv2.py
 ```
 
-
+```
+Python3 sitetoipv2.py
+```
 
